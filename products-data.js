@@ -27,7 +27,7 @@
     {
       id: "tractors",
       name: "Agricultural Tractors & Implements",
-      hero: "assets/img/cat-tractor.jpg",
+      hero: "assets/img/cat-tractor.png",
       description:
         "Reliable tractors and implements engineered for tough conditions across Africa, Southeast Asia, Central Asia and South America.",
     },
