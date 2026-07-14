@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#072B12" />
+
+  <title>Contact & Inquiry | Get Quote by Email</title>
+  <meta name="description" content="Send inquiry for agricultural tractor, farm machinery, construction machinery, smart drip irrigation system and machinery spare parts. Form submission sends to zoe@annetop.com and anna@annetop.com." />
+  <meta name="keywords" content="agricultural tractor, farm machinery, construction machinery, smart drip irrigation system, machinery spare parts, inquiry, quotation" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="contact.html" />
+
+  <meta property="og:title" content="Contact | JINAN HECOTH" />
+  <meta property="og:description" content="Request quote and receive fast reply." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/hero-machine.svg" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#E8F5E9",
+              100: "#C8E6C9",
+              200: "#A5D6A7",
+              300: "#81C784",
+              400: "#43A047",
+              500: "#2E7D32",
+              600: "#1B5E20",
+              700: "#145A32",
+              800: "#0B3D1A",
+              900: "#072B12"
+            },
+            accent: {
+              400: "#FFB300",
+              500: "#F9A825",
+              600: "#F57F17"
+            }
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "Segoe UI", "Roboto", "Arial", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body data-page="contact" class="relative min-h-screen bg-mech text-slate-100">
+  <header id="site-header"></header>
+
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid gap-10 lg:grid-cols-3 lg:items-start">
+      <div class="lg:col-span-2">
+        <div class="text-sm font-semibold text-brand-200">Contact</div>
+        <h1 class="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-white" data-i18n="contact.title">Send Inquiry (Fast B2B Reply)</h1>
+        <p class="mt-4 text-slate-300">
+          <span data-i18n="contact.desc">For fastest quotation, please include destination country/port, target quantity, and working condition.</span>
+          We provide product recommendations for <strong>agricultural tractor</strong>, <strong>farm machinery</strong>,
+          <strong>construction machinery</strong>, <strong>smart drip irrigation system</strong> and <strong>machinery spare parts</strong>.
+        </p>
+
+        <section id="inquiry" class="mt-8 rounded-3xl border border-white/10 bg-white/5 p-8">
+          <h2 class="text-xl font-semibold text-white" data-i18n="contact.form.title">Inquiry Form</h2>
+          <p class="mt-2 text-sm text-slate-300"><span data-i18n="contact.form.sends_to">This form sends to:</span> <span class="font-semibold text-slate-200">zoe@annetop.com</span>, <span class="font-semibold text-slate-200">anna@annetop.com</span></p>
+
+          <form id="inquiry-form" class="mt-6 grid gap-5 sm:grid-cols-2">
+            <input type="hidden" name="product" value="" />
+
+            <div class="sm:col-span-1">
+              <label class="text-sm text-slate-200" for="name" data-i18n="contact.form.name">Your Name *</label>
+              <input class="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-brand-400" id="name" name="name" required placeholder="John Smith" />
+            </div>
+            <div class="sm:col-span-1">
+              <label class="text-sm text-slate-200" for="email" data-i18n="contact.form.email">Email *</label>
+              <input class="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-brand-400" id="email" name="email" type="email" required placeholder="buyer@company.com" />
+            </div>
+
+            <div class="sm:col-span-1">
+              <label class="text-sm text-slate-200" for="company" data-i18n="contact.form.company">Company</label>
+              <input class="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-brand-400" id="company" name="company" placeholder="Company name" />
+            </div>
+            <div class="sm:col-span-1">
+              <label class="text-sm text-slate-200" for="country" data-i18n="contact.form.country">Country / Region</label>
+              <input class="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-brand-400" id="country" name="country" placeholder="Kenya / Brazil / Vietnam ..." />
+            </div>
+
+            <div class="sm:col-span-1">
+              <label class="text-sm text-slate-200" for="phone" data-i18n="contact.form.phone">Phone</label>
+              <input class="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-brand-400" id="phone" name="phone" placeholder="+254 ..." />
+            </div>
+            <div class="sm:col-span-1">
+              <label class="text-sm text-slate-200" for="whatsapp" data-i18n="contact.form.whatsapp">WhatsApp</label>
+              <input class="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-brand-400" id="whatsapp" name="whatsapp" placeholder="+254 ..." />
+            </div>
+
+            <div class="sm:col-span-2">
+              <label class="text-sm text-slate-200" for="message" data-i18n="contact.form.details">Inquiry Details *</label>
+              <textarea class="mt-2 min-h-40 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-brand-400" id="message" name="message" required placeholder="Interested products/SKU, destination port, quantity, application, options..."></textarea>
+              <div class="mt-2 text-xs text-slate-400">
+                Recommended format: Destination port • Quantity • Working conditions • Configuration preference • Spare parts kit (yes/no)
+              </div>
+            </div>
+
+            <div class="sm:col-span-2 flex flex-col sm:flex-row gap-3 sm:items-center">
+              <button id="submit-btn" class="inline-flex items-center justify-center rounded-xl bg-brand-500 px-6 py-3 text-sm font-semibold text-white hover:bg-brand-400" type="submit">
+                <span data-i18n="contact.form.send">Send Inquiry</span>
+              </button>
+              <a class="inline-flex items-center justify-center rounded-xl border border-white/15 bg-black/20 px-6 py-3 text-sm font-semibold text-slate-200 hover:text-white hover:border-white/25" href="mailto:zoe@annetop.com,anna@annetop.com?subject=Inquiry%20from%20Website">
+                <span data-i18n="contact.form.or_email">Or Email Directly</span>
+              </a>
+            </div>
+
+            <div id="form-status" class="hidden sm:col-span-2"></div>
+          </form>
+        </section>
+
+        <section id="privacy" class="mt-10 rounded-3xl border border-white/10 bg-black/20 p-8">
+          <h2 class="text-xl font-semibold text-white" data-i18n="contact.privacy.title">Privacy</h2>
+          <p class="mt-3 text-sm text-slate-300" data-i18n="contact.privacy.text">
+            We use your inquiry information only to respond to your request and provide quotation or technical matching support.
+            We do not sell your information to third parties.
+          </p>
+        </section>
+      </div>
+
+      <aside class="rounded-3xl border border-white/10 bg-white/5 p-6">
+        <div class="text-lg font-semibold text-white">Direct Contact</div>
+        <div class="mt-4 space-y-3 text-sm text-slate-300">
+          <div>
+            <div class="text-xs text-slate-400">Email</div>
+            <a class="font-semibold text-slate-100 hover:text-brand-200" href="mailto:zoe@annetop.com">zoe@annetop.com</a>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">Email</div>
+            <a class="font-semibold text-slate-100 hover:text-brand-200" href="mailto:anna@annetop.com">anna@annetop.com</a>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">WhatsApp</div>
+            <a class="font-semibold text-slate-100 hover:text-brand-200" href="https://wa.me/860000000000" target="_blank" rel="noopener">+86 000 0000 0000</a>
+            <div class="mt-1 text-xs text-slate-500">(Replace with your actual number in assets/js/config.js)</div>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">Working hours</div>
+            <div>Mon–Sat, 09:00–18:00 (Beijing Time)</div>
+          </div>
+        </div>
+
+        <div class="mt-8 rounded-2xl border border-white/10 bg-black/20 p-5">
+          <div class="font-semibold text-white">Tip for Better SEO Leads</div>
+          <p class="mt-2 text-sm text-slate-300">
+            Add your WhatsApp and company certificates, then submit <code class="text-slate-200">sitemap.xml</code> to Google Search Console.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="products-data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      I18n.init();
+      SiteUI.renderHeader();
+      SiteUI.renderFooter();
+      SiteUI.setActiveNav();
+      SiteUI.prefillInquiryFromUrl();
+    });
+  </script>
+</body>
+</html>

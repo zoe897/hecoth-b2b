@@ -1,0 +1,56 @@
+/* Custom styles layered on top of Tailwind (CDN). Keep it minimal. */
+
+:root{
+  --brand-900:#072B12; /* deep forest */
+  --brand-800:#0B3D1A;
+  --brand-700:#145A32;
+  --brand-600:#1B5E20;
+  --brand-500:#2E7D32; /* main: forest green */
+  --brand-400:#43A047; /* secondary: vivid green */
+  --accent-500:#F9A825; /* accent: harvest gold */
+  --steel-100:#EAF5EC;
+}
+
+/* Subtle “mechanical grid” background */
+.bg-mech{
+  background:
+    radial-gradient(1000px 520px at 10% 0%, rgba(67,160,71,.26), rgba(0,0,0,0) 60%),
+    radial-gradient(900px 520px at 85% 10%, rgba(249,168,37,.16), rgba(0,0,0,0) 55%),
+    linear-gradient(180deg, rgba(7,43,18,1) 0%, rgba(4,18,10,1) 100%);
+}
+.bg-mech::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(to right, rgba(231,238,248,.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(231,238,248,.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at 30% 10%, rgba(0,0,0,.85), rgba(0,0,0,.10) 55%, transparent 75%);
+  pointer-events:none;
+}
+
+/* Better focus outlines */
+:focus-visible{
+  outline: 2px solid rgba(59,130,246,.9);
+  outline-offset: 2px;
+}
+
+/* Smooth scroll for in-page anchors */
+html{ scroll-behavior:smooth; }
+
+/* Clamp helper for long specs */
+.line-clamp-3{
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+
+/* RTL support (Arabic) */
+html[dir="rtl"] body{
+  text-align: right;
+}
+html[dir="rtl"] #site-header nav{
+  direction: rtl;
+}

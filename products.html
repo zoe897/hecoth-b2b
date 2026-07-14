@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#072B12" />
+
+  <title>Products | Agricultural Tractor, Farm Machinery, Construction Machinery, Smart Drip Irrigation System</title>
+  <meta name="description" content="Browse products by 4 main categories: agricultural tractor, farm machinery, construction machinery, smart drip irrigation system and machinery spare parts. View English technical parameters and send inquiry." />
+  <meta name="keywords" content="agricultural tractor, farm machinery, construction machinery, smart drip irrigation system, machinery spare parts" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="products.html" />
+
+  <meta property="og:title" content="Products | JINAN HECOTH" />
+  <meta property="og:description" content="B2B export catalog with technical specs and quick inquiry." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/hero-machine.svg" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#E8F5E9",
+              100: "#C8E6C9",
+              200: "#A5D6A7",
+              300: "#81C784",
+              400: "#43A047",
+              500: "#2E7D32",
+              600: "#1B5E20",
+              700: "#145A32",
+              800: "#0B3D1A",
+              900: "#072B12"
+            },
+            accent: {
+              400: "#FFB300",
+              500: "#F9A825",
+              600: "#F57F17"
+            }
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "Segoe UI", "Roboto", "Arial", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body data-page="products" class="relative min-h-screen bg-mech text-slate-100">
+  <header id="site-header"></header>
+
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid gap-8 lg:grid-cols-3 lg:items-center">
+      <div class="lg:col-span-2">
+        <div class="text-sm font-semibold text-brand-200">Export Catalog</div>
+        <h1 id="products-title" class="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-white">All Products</h1>
+        <p id="products-desc" class="mt-4 text-slate-300">
+          Export-ready equipment and parts. Fast configuration matching for overseas distributors and project procurement.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-2" id="category-chips" aria-label="Product categories"></div>
+      </div>
+      <div class="lg:justify-self-end">
+        <img id="products-hero" src="assets/img/hero-machine.svg" alt="agricultural tractor farm machinery construction machinery catalog" class="w-full max-w-md rounded-3xl border border-white/10 bg-black/20" />
+      </div>
+    </div>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3" id="product-grid" aria-label="Product list"></div>
+
+    <!-- Product adding guide (指引) -->
+    <div class="mt-10 rounded-3xl border border-accent-500/40 bg-accent-500/10 p-6">
+      <div class="text-sm font-semibold text-accent-500">Product Data Guide</div>
+      <div class="mt-2 text-sm text-slate-200">
+        Add / edit products in <code class="text-slate-100">products-data.js</code>. Put images under
+        <code class="text-slate-100">/images/</code> and set <code class="text-slate-100">image</code> like
+        <code class="text-slate-100">/images/your-file.jpg</code>.
+      </div>
+    </div>
+
+    <div class="mt-14 rounded-3xl border border-white/10 bg-white/5 p-8">
+      <div class="grid gap-6 lg:grid-cols-3 lg:items-center">
+        <div class="lg:col-span-2">
+          <h2 class="text-xl font-semibold text-white">Need fast quotation?</h2>
+          <p class="mt-2 text-sm text-slate-300">
+            Tell us destination country/port, target quantity, and application. We reply with recommended configuration and spare parts plan.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 lg:justify-end">
+          <a href="contact.html#inquiry" class="inline-flex items-center justify-center rounded-xl bg-brand-500 px-6 py-3 text-sm font-semibold text-white hover:bg-brand-400">Send Inquiry</a>
+          <a href="news.html" class="inline-flex items-center justify-center rounded-xl border border-white/15 bg-black/20 px-6 py-3 text-sm font-semibold text-slate-200 hover:text-white hover:border-white/25">Read Export Guides</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="products-data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      I18n.init();
+      SiteUI.renderHeader();
+      SiteUI.renderFooter();
+      SiteUI.setActiveNav();
+      SiteUI.renderProductsPage();
+    });
+  </script>
+</body>
+</html>

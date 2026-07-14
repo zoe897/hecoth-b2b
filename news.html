@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#072B12" />
+
+  <title>News & Export Guides | B2B Machinery SEO Content</title>
+  <meta name="description" content="English blog and export guides for B2B buyers: agricultural tractor, farm machinery, construction machinery, smart drip irrigation system, and machinery spare parts. Optimized for Google search." />
+  <meta name="keywords" content="agricultural tractor, farm machinery, construction machinery, smart drip irrigation system, machinery spare parts, export guide, procurement" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="news.html" />
+
+  <meta property="og:title" content="News & Export Guides | JINAN HECOTH" />
+  <meta property="og:description" content="High-quality English content for overseas B2B procurement and SEO." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/hero-machine.svg" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.16/dist/typography.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#E8F5E9",
+              100: "#C8E6C9",
+              200: "#A5D6A7",
+              300: "#81C784",
+              400: "#43A047",
+              500: "#2E7D32",
+              600: "#1B5E20",
+              700: "#145A32",
+              800: "#0B3D1A",
+              900: "#072B12"
+            },
+            accent: {
+              400: "#FFB300",
+              500: "#F9A825",
+              600: "#F57F17"
+            }
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "Segoe UI", "Roboto", "Arial", "sans-serif"]
+          },
+          typography: {
+            DEFAULT: {
+              css: {
+                color: "#CBD5E1",
+                a: { color: "#93C5FD", textDecoration: "none" },
+                "a:hover": { color: "#ffffff" },
+                h2: { color: "#fff" },
+                strong: { color: "#fff" }
+              }
+            }
+          }
+        }
+      },
+      plugins: [tailwindcssTypography]
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+
+<body data-page="news" class="relative min-h-screen bg-mech text-slate-100">
+  <header id="site-header"></header>
+
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+    <div class="text-sm font-semibold text-brand-200">News & SEO Guides</div>
+    <h1 class="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-white">
+      Export Insights for Overseas B2B Buyers
+    </h1>
+    <p class="mt-4 text-slate-300">
+      Content is designed around buyer intent for Africa, Southeast Asia, Central Asia and South America.
+      Keywords: agricultural tractor, farm machinery, construction machinery, smart drip irrigation system, machinery spare parts.
+    </p>
+
+    <section id="news-list" class="mt-10 grid gap-6 lg:grid-cols-2"></section>
+    <section id="news-detail" class="mt-10 hidden"></section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="data/news.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      I18n.init();
+      SiteUI.renderHeader();
+      SiteUI.renderFooter();
+      SiteUI.setActiveNav();
+      SiteUI.renderNewsPage();
+    });
+  </script>
+</body>
+</html>
