@@ -27,28 +27,28 @@
     {
       id: "tractors",
       name: "Agricultural Tractors & Implements",
-      hero: "assets/img/cat-tractor.svg",
+      hero: "assets/img/cat-tractor.jpg",
       description:
         "Reliable tractors and implements engineered for tough conditions across Africa, Southeast Asia, Central Asia and South America.",
     },
     {
       id: "farm-machinery",
       name: "Farm Machinery",
-      hero: "assets/img/cat-farm.svg",
+      hero: "assets/img/cat-farm.jpg",
       description:
         "Planters, tillage equipment and harvest support machinery designed to improve productivity and reduce downtime.",
     },
     {
       id: "construction-machinery",
       name: "Construction Machinery",
-      hero: "assets/img/cat-construction.svg",
+      hero: "assets/img/cat-construction.jpg",
       description:
         "Excavators, loaders and road equipment for contractors, project owners and equipment rental companies.",
     },
     {
       id: "irrigation-parts",
       name: "Smart Drip Irrigation & Spare Parts",
-      hero: "assets/img/cat-irrigation.svg",
+      hero: "assets/img/cat-irrigation.jpg",
       description:
         "Water-saving drip irrigation systems, fertigation units, filters and machinery spare parts with stable export supply.",
     },
